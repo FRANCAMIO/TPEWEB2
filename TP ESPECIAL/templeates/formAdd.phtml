@@ -1,0 +1,43 @@
+<?php require_once './templeates/header.phtml' ?>
+
+<form method='POST' action='addZapatilla'>
+<div class="col-3">
+            <div class="form-group">
+                <label>ID marca</label>
+                <select required name="id_marca" class="form-control">
+                    <option value="10">10</option>
+                    <option value="12">12</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="28">28</option>
+                    <option value="32">32</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+      <label for="diseño">Diseño</label>
+      <input type="text" class="form-control" id="diseño" name='diseño' placeholder="Diseño">
+    </div>
+    <div class="form-group">
+      <label for="talle">Talle</label>
+      <input type="number" class="form-control" id="talle" name='talle' placeholder="Talle">
+    </div>
+    <div class="form-group">
+        <label for="material">Material</label>
+        <input type="text" class="form-control" id="material" name='material' placeholder="Material">
+    </div>
+    <button type="submit" class="btn btn-primary">Agregar</button>
+
+</form>
+
+<?php require_once './templeates/footer.phtml' ?>

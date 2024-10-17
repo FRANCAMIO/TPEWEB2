@@ -1,0 +1,24 @@
+
+<?php 
+require_once 'templeates/header.phtml'   ?>
+
+    <h1>ZAPATILLAS</h1>
+    <div>
+        <?php foreach($zapatillas as $zapatilla): ?>
+          <ul>
+           <li>Diseño: <?=$zapatilla->diseño?> </li></a>
+           <li>Talle:<?=$zapatilla->talle?> </li>
+           <li>Material: <?=$zapatilla->material?> </li>
+           <a href="detailZapatilla/<?= $zapatilla->id_zapatilla ?>" type="button" class='btn btn-success btn-sm ml-auto'>detalle</a> 
+           <?php if (AuthHelper::isLogged()):?>
+            <button class="btn btn-primary btn-sm mt-2" type="button"><a class="link-light" href="editZapatillas/<?=$zapatilla->id_zapatilla?>">Editar</a></button>
+            <button class="btn btn-outline-primary btn-sm mt-2" type="button"><a class="link-danger" href="deleteZapatilla/<?=$zapatilla->id_zapatilla?>">Eliminar</a></button>
+
+           <?php endif ?>
+          
+          </ul>
+            <?php endforeach ?>
+            
+       
+    </div>
+    <?php require_once 'templeates/footer.phtml'; ?>

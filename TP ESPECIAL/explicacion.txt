@@ -1,0 +1,18 @@
+Camio Francisco
+Juan Martin Villar
+SNEAKERS(web explicación)
+
+Nuestra página web se va a centrar en la venta de zapatillas, tanto originales como réplicas. Ofreceremos una gran variedad de modelos para que los clientes puedan elegir según sus gustos y necesidades, desde marcas reconocidas y originales, hasta opciones más económicas, pero de buena calidad. Así, habrá alternativas para todos los presupuestos, siempre asegurándonos de ofrecer productos que se vean bien y sean cómodos.
+
+
+RELACION 
+
+Nuestra tabla "zapatillas" se relaciona con la tabla "marcas" para poder identificar fácilmente a qué marca pertenece cada zapatilla que vendemos. De esta manera, podemos organizar mejor los productos, mostrando claramente si son de una marca reconocida o no. Esto también nos ayuda a controlar la mercadería de forma más eficiente, ya que podremos filtrar las zapatillas según la marca, facilitando la búsqueda y compra de los clientes en la web. Así, la relación entre ambas tablas nos permite tener todo más ordenado y ofrecer una mejor experiencia al usuario.
+tabla zapatillas: contiene:.id_zapatilla
+			   .id_marca: foreign_key
+			   .diseño: original o replica
+			   .talle
+			   .material:cuero,lona,etc
+
+tabla marca: contiene: .id_marca: nombre de la marca
+		  	.modelo:  modelo de la zapatilla

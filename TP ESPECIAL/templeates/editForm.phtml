@@ -1,0 +1,19 @@
+<?php require_once './templeates/header.phtml' ?>
+
+<form method="POST" action="editZapatillas/<?= $zapatilla->id_zapatilla ?>">
+    <div class="form-group">
+        <label for="diseño">Diseño</label>
+        <input type="text" class="form-control" id="diseño" name="diseño" placeholder=<?= $zapatilla->diseño ?>>
+    </div>
+    <div class="form-group">
+        <label for="talle">Talle</label>
+        <input type="number" class="form-control" id="talle" name="talle" placeholder=<?= $zapatilla->talle ?>>
+    </div>
+    <div class="form-group">
+        <label for="material">Material</label>
+        <input type="text" class="form-control" id="material" name="material" placeholder=<?= $zapatilla->material ?>>
+    </div>
+    <button type="submit" class="btn btn-primary">Editar</button>
+</form>
+
+<?php require_once './templeates/footer.phtml' ?>
