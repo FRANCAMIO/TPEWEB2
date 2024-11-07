@@ -39,29 +39,9 @@
             }
         }
 
-       // //public function get($params=[]){  // GET ORDENADO Y ADEMAS AGREGO EL OPCIONAL DE ORDENAR POR UN CAMPO
-           // if(empty($params)){
-              //  $sort_by = isset($_GET['sort_by']) ? $_GET['sort_by'] : 'ID';
-               // $order = isset($_GET['order']) ? $_GET['order'] : 'asc';
 
-               // if(($order =='ASC'|| $order =='DESC') && ($sort_by =='ID'||$sort_by=='id_marca'
-                //|| $sort_by=='diseño'||$sort_by=='talle'|| $sort_by=='material')){
 
-               //     $zapatillas=$this->model->getZapatillasOrdenadas($sort_by,$order);
-               //     return $this->view->response($zapatillas,200);
-               // }else{
-               //     return $this->view->response(['Complete los campos'],400);
-               // }
-           // }else{
-           //     $zapatilla=$this->model->getZapatilla($params[':ID']);
-
-              //  if(!empty($zapatilla)){
-              //      return $this->view->response($zapatilla,200);
-             //  }else{
-               //     return $this->view->response(['No existe la zapatilla con ese id = '.$params[':ID']],404);
-              //  }
-          //  }
-       // }
+             
        function get($params = []){
         if(empty($params)){
             $page = isset($_GET['page']) ? intval($_GET['page']) : 1; 
