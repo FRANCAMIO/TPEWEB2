@@ -51,7 +51,6 @@ Descripción: Modifica una zapatilla existente.
 
 Formato JSON de Solicitud:
 json
-Copiar código
 {
     "id_marca": "1",
     "diseño": "Air Max 2024",
